@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "python-daily-learning"
+version = "0.1.0"
+description = "Daily Python learning project"
+authors = ["Your Name <your.email@example.com>"]
+packages = [
+    {include = "api", from = "src"},
+    {include = "main", from = "src"},
+    {include = "userservice", from = "src"},
+    {include = "utils", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+invoke = "^2.2.0"
+pytest = "^7.4.0"
+black = "^23.0.0"
+mypy = "^1.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+mypy_path = "src"

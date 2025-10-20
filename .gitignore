@@ -1,0 +1,32 @@
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Poetry
+# Commit poetry.lock for reproducible builds
+# poetry.lock
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Type checking
+.mypy_cache/
