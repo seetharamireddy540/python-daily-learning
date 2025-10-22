@@ -15,6 +15,11 @@ poetry run invoke test
 poetry run invoke format
 poetry run invoke lint
 
+poetry run pytest                    # Run all tests
+poetry run pytest tests/test_math.py # Run specific test file
+poetry run pytest -v                # Verbose output
+
+
 # Docker
 docker-compose up --build
 ```
