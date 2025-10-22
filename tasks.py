@@ -11,6 +11,11 @@ def test(c):
     c.run("pytest tests/")
 
 @task
+def coverage(c):
+    """Run tests with coverage"""
+    c.run("pytest --cov=src --cov-report=html --cov-report=term")
+
+@task
 def format(c):
     """Format code with black and isort"""
     c.run("isort src/ tests/ tasks.py")
@@ -25,4 +30,4 @@ def lint(c):
 @task
 def clean(c):
     """Clean build artifacts"""
-    c.run("rm -rf build/ dist/ *.egg-info/ .mypy_cache/ .pytest_cache/")
+    c.run("rm -rf build/ dist/ *.egg-info/ .mypy_cache/ .pytest_cache/ htmlcov/ .coverage")
