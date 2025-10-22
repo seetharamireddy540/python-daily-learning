@@ -12,12 +12,14 @@ def test(c):
 
 @task
 def format(c):
-    """Format code with black"""
+    """Format code with black and isort"""
+    c.run("isort src/ tests/ tasks.py")
     c.run("black src/ tests/ tasks.py")
 
 @task
 def lint(c):
-    """Run mypy type checking"""
+    """Run all linting tools"""
+    c.run("flake8 src/ tests/")
     c.run("mypy src/")
 
 @task
