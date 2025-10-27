@@ -12,6 +12,9 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
+requests = "^2.32.5"
+pendulum = "^3.1.0"
+flask = "^3.1.2"
 
 [tool.poetry.group.dev.dependencies]
 invoke = "^2.2.0"
