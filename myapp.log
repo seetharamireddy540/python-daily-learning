@@ -1,0 +1,21 @@
+2025-11-01 20:18:15 - file_operations_demo.py:19 - INFO - Started
+2025-11-01 20:18:15 - file_operations_demo.py:20 - INFO - Finished
+2025-11-01 20:18:15 - file_operations_demo.py:21 - DEBUG - This is a debug message
+2025-11-01 20:18:15 - file_operations_demo.py:22 - INFO - This is an info message
+2025-11-01 20:18:15 - file_operations_demo.py:23 - WARNING - This is a warning message
+2025-11-01 20:18:15 - file_operations_demo.py:24 - ERROR - This is an error message
+2025-11-01 20:18:15 - file_operations_demo.py:25 - CRITICAL - This is a critical message
+2025-11-01 20:18:20 - file_operations_demo.py:19 - INFO - Started
+2025-11-01 20:18:20 - file_operations_demo.py:20 - INFO - Finished
+2025-11-01 20:18:20 - file_operations_demo.py:21 - DEBUG - This is a debug message
+2025-11-01 20:18:20 - file_operations_demo.py:22 - INFO - This is an info message
+2025-11-01 20:18:20 - file_operations_demo.py:23 - WARNING - This is a warning message
+2025-11-01 20:18:20 - file_operations_demo.py:24 - ERROR - This is an error message
+2025-11-01 20:18:20 - file_operations_demo.py:25 - CRITICAL - This is a critical message
+2025-11-01 20:20:25 - file_operations_demo.py:31 - INFO - Started
+2025-11-01 20:20:25 - file_operations_demo.py:32 - INFO - Finished
+2025-11-01 20:20:25 - file_operations_demo.py:33 - DEBUG - This is a debug message
+2025-11-01 20:20:25 - file_operations_demo.py:34 - INFO - This is an info message
+2025-11-01 20:20:25 - file_operations_demo.py:35 - WARNING - This is a warning message
+2025-11-01 20:20:25 - file_operations_demo.py:36 - ERROR - This is an error message
+2025-11-01 20:20:25 - file_operations_demo.py:37 - CRITICAL - This is a critical message

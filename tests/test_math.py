@@ -1,5 +1,5 @@
 import pytest
-from utils.math import add
+from utils.math_utils import add
 
 
 def test_add_positive_numbers():

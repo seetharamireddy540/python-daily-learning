@@ -6,4 +6,3 @@ class LogEntry:
         self.timestamp = timestamp
         self.customer_id = customer_id
         self.page = page
-
