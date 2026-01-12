@@ -1,68 +1,14 @@
 [tool.poetry]
 name = "python-daily-learning"
 version = "0.1.0"
-description = "Daily Python learning project"
-authors = ["Your Name <your.email@example.com>"]
-packages = [
-    {include = "api", from = "src"},
-    {include = "main", from = "src"},
-    {include = "userservice", from = "src"},
-    {include = "utils", from = "src"}
-]
+description = ""
+authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.11"
-requests = "^2.32.5"
-pendulum = "^3.1.0"
-flask = "^3.1.2"
-
-[tool.poetry.group.dev.dependencies]
-invoke = "^2.2.0"
-pytest = "^7.4.0"
-pytest-cov = "^4.1.0"
-coverage = "^7.3.0"
-black = "^23.0.0"
-flake8 = "^6.0.0"
-isort = "^5.12.0"
-mypy = "^1.5.0"
+python = "^3.8"
+pandas = "^2.0.0"
+openpyxl = "^3.1.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-python_files = ["test_*.py"]
-pythonpath = ["."]
-
-[tool.black]
-line-length = 88
-target-version = ['py311']
-
-[tool.isort]
-profile = "black"
-line_length = 88
-src_paths = ["src", "tests"]
-
-[tool.flake8]
-max-line-length = 88
-extend-ignore = ["E203", "W503"]
-exclude = [".git", "__pycache__", ".venv"]
-
-[tool.coverage.run]
-source = ["src"]
-omit = ["tests/*", "*/__init__.py"]
-
-[tool.coverage.report]
-exclude_lines = [
-    "pragma: no cover",
-    "def __repr__",
-    "if __name__ == .__main__.:"
-]
-show_missing = true
-
-[tool.mypy]
-python_version = "3.11"
-warn_return_any = true
-warn_unused_configs = true
-mypy_path = "src"

@@ -1,5 +1,4 @@
 from api.app import say_hello
-from utils.math_utils import add
 
 fruits: str = ["apple", "banana", "cherry"]
 fruits.append("orange")
