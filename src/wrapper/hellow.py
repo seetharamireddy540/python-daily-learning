@@ -11,10 +11,22 @@ def logger(func):
 
 
 @logger
-def add(a, b):
+def add(a: int, b: int) -> int:
     return a + b
 
 
+class MyContextManager:
+    def __enter__(self):
+        print("Entering context")
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print("Exiting context")
+
+
 if __name__ == "__main__":
-    result = add(3, 5)
-    print(f" result = {result}")
+    # result = add(3, 5)
+    # print(f" result = {result}")
+
+    with MyContextManager() as cm:
+        print("In context")
