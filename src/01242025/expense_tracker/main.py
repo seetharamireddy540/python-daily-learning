@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # expense_tracker/main.py (continued)
 class Expense:
-    def __init__(self, amount, category, description):
+    def __init__(self, amount: float, category: str, description: str):
         self.id = len(tracker.expenses) + 1
         self.amount = float(amount)
         self.category = category
